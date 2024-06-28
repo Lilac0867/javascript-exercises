@@ -1,6 +1,8 @@
 const sumAll = function(start, end) {
     let sum = 0;
-    for(let i = start; i <= end; i++) {
+    const numArray = [start, end];
+    numArray.sort();
+    for(let i = numArray[0]; i <= numArray[1]; i++) {
         sum += i;
     }
     return sum;
