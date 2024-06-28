@@ -1,4 +1,8 @@
 const sumAll = function(start, end) {
+    if(start < 0 || end < 0) {
+        return "ERROR";
+    }
+
     let sum = 0;
     const numArray = [start, end];
     numArray.sort();
