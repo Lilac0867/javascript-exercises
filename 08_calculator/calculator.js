@@ -9,8 +9,11 @@ const subtract = function(a, b) {
   return a - b;
 };
 
-const sum = function() {
-	
+const sum = function(a, b) {
+	if(a === undefined || b === undefined) {
+    a, b = 0;
+  }
+  return a * b;
 };
 
 const multiply = function() {
