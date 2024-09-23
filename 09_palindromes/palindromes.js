@@ -1,5 +1,5 @@
 const palindromes = function (str) {
-  let string = str.replaceAll(/[^a-zA-Z0-9\s]/g, '').toLowerCase(); // Need to figure out way to replace non letter, non whitespace characters w/ regex
+  let string = str.replaceAll(/[^a-zA-Z0-9]/g, '').toLowerCase(); // Need to figure out way to replace non letter, non whitespace characters w/ regex
   console.log(string);
   let inc = 0;
   if(string.length % 2 !== 0) {
