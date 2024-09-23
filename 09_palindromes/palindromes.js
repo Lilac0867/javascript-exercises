@@ -16,6 +16,8 @@ const palindromes = function (str) {
 
   if(startStr === endStr) {
     return true;
+  } else {
+    return false;
   }
 };
 
