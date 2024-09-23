@@ -24,8 +24,12 @@ const power = function(num, exp) {
   return Math.pow(num, exp);
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+  let total = 1;
+	for(let i = num; i > 1; i--) {
+    total *= i;
+  }
+  return total;
 };
 
 // Do not edit below this line
