@@ -20,8 +20,8 @@ const multiply = function(arr) {
   return arr.reduce(((total, nextNum) => total * nextNum), 1);
 };
 
-const power = function() {
-	
+const power = function(num, exp) {
+  return Math.pow(num, exp);
 };
 
 const factorial = function() {
