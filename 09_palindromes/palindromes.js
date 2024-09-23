@@ -6,8 +6,8 @@ const palindromes = function (str) {
     inc = 1;
   }
 
-  let startStr = string.toLowerCase().slice(0, (string.length/2));
-  let endStr = string.toLowerCase().slice((string.length/2)+inc)
+  let startStr = string.slice(0, (string.length/2));
+  let endStr = string.slice((string.length/2)+inc)
                                 .split('')
                                 .reverse()
                                 .toString()
