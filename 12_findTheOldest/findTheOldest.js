@@ -1,7 +1,7 @@
 const findTheOldest = function(people) {
     const peopleAge = people.map((person) => {
         const name = person.name;
-        const age = person.yearOfDeath - person.yearOfBirth;
+        const age = ((typeof person.yearOfDeath !== 'undefined') ? person.yearOfDeath : (new Date).getFullYear()) - person.yearOfBirth;
         return {name, age};
     });
 
